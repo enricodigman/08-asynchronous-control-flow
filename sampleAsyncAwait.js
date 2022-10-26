@@ -31,7 +31,7 @@ function myAsync4(callback) {
                   // lets say something happened
               throw new Error("forced error")
           } catch (err) {
-              return reject(err)
+              reject(err)
           }
         }, 3000)
     })
